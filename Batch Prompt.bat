@@ -13,7 +13,7 @@
 @ECHO.
 @ECHO.
 @ECHO:Please report issues at the following URL:
-@ECHO: https://github.com/HeyITGuyFixIt/beta-batch-prompt/issues
+@ECHO: https://github.com/HeyITGuyFixIt/Beta-Batch-Prompt/issues
 @TIMEOUT /T 02>nul
 @SETLOCAL EnableDelayedExpansion
 @GOTO SETTINGS
