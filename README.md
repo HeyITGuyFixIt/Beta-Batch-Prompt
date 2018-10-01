@@ -1,7 +1,7 @@
 # Beta Batch Prompt
 Beta Batch Prompt is a batch script emulator of Command Prompt (cmd.exe). It can be used when Command Prompt is disabled, but not if batch scripts can't be run. It is not to be used for anything illegal, malicious, or immoral.
 
-Always report bugs at [here](https://github.com/ChristianSirolli/beta-batch-prompt/issues).
+Always report bugs at [here](https://github.com/HeyITGuyFixIt/Beta-Batch-Prompt/issues).
 
 1. Installation
    1. Download the zip file from GitHub and unzip it.
