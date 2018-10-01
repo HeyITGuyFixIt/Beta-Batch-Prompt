@@ -13,7 +13,7 @@
 @ECHO.
 @ECHO.
 @ECHO:Please report issues at the following URL:
-@ECHO: https://github.com/ChristianSirolli/beta-batch-prompt/issues
+@ECHO: https://github.com/HeyITGuyFixIt/beta-batch-prompt/issues
 @TIMEOUT /T 02>nul
 @SETLOCAL EnableDelayedExpansion
 @GOTO SETTINGS
@@ -30,7 +30,7 @@
 @CD %CDDIR%
 @COLOR %COLORS%
 @CLS
-@ECHO:Beta Batch Prompt [Version 1.0.0.6]
+@ECHO:Beta Batch Prompt [Version 1.0.0.7]
 @ECHO:Copyright (c) 2018 Christian Sirolli
 @ENDLOCAL
 @IF /I "%ECHOTOGGLE%"=="true" (GOTO CMDON)
