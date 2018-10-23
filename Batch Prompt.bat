@@ -30,7 +30,7 @@
 @CD %CDDIR%
 @COLOR %COLORS%
 @CLS
-@ECHO:Beta Batch Prompt [Version 1.0.0.7]
+@ECHO:Beta Batch Prompt [Version 1.0.0.8]
 @ECHO:Copyright (c) 2018 Christian Sirolli
 @ENDLOCAL
 @IF /I "%ECHOTOGGLE%"=="true" (GOTO CMDON)
