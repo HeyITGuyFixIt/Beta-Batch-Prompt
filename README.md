@@ -23,3 +23,4 @@ Always report bugs at [here](https://github.com/HeyITGuyFixIt/Beta-Batch-Prompt/
    7. Be sure to save it when you are done.
 4. Debug Mode
    1. Debug mode is used to test bugs in BBP. You can use it by opening "debug.bat" or by typing `debug` in BBP.
+   2. For most issues, BBP will not close when it runs into an error that would otherwise cause it to close. This allows you to see what error is thrown, if one is.
