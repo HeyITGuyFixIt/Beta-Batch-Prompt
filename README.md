@@ -5,7 +5,7 @@ Always report bugs at [here](https://github.com/HeyITGuyFixIt/Beta-Batch-Prompt/
 
 1. Installation
    1. Download the zip file from GitHub and unzip it.
-   2. Open the newly unzipped folder. You will find three (3) files: "Beta Batch Prompt.bat", "LICENSE", and "README.md". If you run "Beta Batch Prompt.bat", Windows' Smart Screen will prevent you from running it simply because it is a batch script from the internet; you can click `More Info` and then `Run anyway` to run it. I promise there is nothing malicious in this script. Hold me to that promise. Optionally you can view the properties of the script and unblock it, which will cause the Smart Screen to not prevent you from running it.
+   2. Open the newly unzipped folder. You will find four (4) files: "Beta Batch Prompt.bat", "debug.bat", "LICENSE", and "README.md". If you run "Beta Batch Prompt.bat", Windows' Smart Screen will prevent you from running it simply because it is a batch script from the internet; you can click `More Info` and then `Run anyway` to run it. I promise there is nothing malicious in this script. Hold me to that promise. Optionally you can view the properties of the script and unblock it, which will cause the Smart Screen to not prevent you from running it.
    3. The script itself is a standalone script, completely independant of any other file. Thus, you can copy and paste it or move it to any location, including (but not limited to) a CD, DVD or even a USB drive.
 2. Standard Use
    1. Open Beta Batch Prompt from the location of the script, where ever it may be that you placed it.
@@ -21,3 +21,5 @@ Always report bugs at [here](https://github.com/HeyITGuyFixIt/Beta-Batch-Prompt/
    5. To change the starting echo to either ECHO ON or ECHO OFF, go to the line that begins with "@SET "ECHOTOGGLE" and change the value to either TRUE or FALSE, TRUE being for ECHO ON and FALSE being for ECHO OFF.
    6. To change the starting directory, go to the line that begins with "@SET "CDDIR" and change the value to whatever directory you wish to begin in.
    7. Be sure to save it when you are done.
+4. Debug Mode
+   1. Debug mode is used to test bugs in BBP. You can use it by opening "debug.bat" or by typing `debug` in BBP.
