@@ -49,6 +49,7 @@
 @IF /I "%CMD%"=="ECHO ON" (SET "ECHOTOGGLE=true" && GOTO CMDON)
 @IF /I "%CMD%"=="exit" (GOTO EXIT)
 @IF /I "%CMD%"=="echo" (ECHO:ECHO is %ECHO%. && GOTO CONTINUEOFF)
+@IF /I "%CMD%"=="debug" (CD "%LOCATION%" && CALL "%LOCATION%/debug.bat" && EXIT)
 @echo "%CMD%"|findstr /I /R /C:"\<ECHO\ ON\ " >nul 2>&1
 @if not errorlevel 1 (
 	@SET "ECHOTOGGLE=true"
@@ -106,6 +107,7 @@
 @IF /I "%CMD%"=="ECHO ON" (SET "ECHOTOGGLE=true" && GOTO CMDON)
 @IF /I "%CMD%"=="exit" (GOTO EXIT)
 @IF /I "%CMD%"=="echo" (ECHO:ECHO is %ECHO%. && GOTO CONTINUEON)
+@IF /I "%CMD%"=="debug" (CD "%LOCATION%" && CALL "%LOCATION%/debug.bat" && EXIT)
 @echo "%CMD%"|findstr /I /R /C:"\<ECHO\ ON\ " >nul 2>&1
 @if not errorlevel 1 (
 	@SET "ECHOTOGGLE=true"
