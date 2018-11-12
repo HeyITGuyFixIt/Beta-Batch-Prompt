@@ -15,12 +15,14 @@
 @ECHO:Please report issues at the following URL:
 @ECHO: https://github.com/HeyITGuyFixIt/Beta-Batch-Prompt/issues
 @TIMEOUT /T 02>nul
-@SETLOCAL EnableDelayedExpansion
 @GOTO SETTINGS
 :SETTINGS
 @ECHO OFF
+@REM Change the color of the console
 @SET "COLORS=0A"
+@REM Set to TRUE to have ECHO equal ON or set to FALSE to have ECHO equal OFF when started
 @SET "ECHOTOGGLE=TRUE"
+@REM Replace %USERPROFILE% with whatever location you would like to start with. %USERPROFILE% is equal to "C:\Users\<your username>"
 @SET "CDDIR=%USERPROFILE%"
 @GOTO START
 :START
@@ -30,9 +32,8 @@
 @CD %CDDIR%
 @COLOR %COLORS%
 @CLS
-@ECHO:Beta Batch Prompt [Version 1.0.0.8]
+@ECHO:Beta Batch Prompt [Version 1.0.0.9]
 @ECHO:Copyright (c) 2018 Christian Sirolli
-@ENDLOCAL
 @IF /I "%ECHOTOGGLE%"=="true" (GOTO CMDON)
 @IF /I "%ECHOTOGGLE%"=="false" (GOTO CMDOFF)
 :CMDOFF
@@ -41,7 +42,6 @@
 @SET "ECHO=off"
 @SET "CMD="
 @SET /P CMD=""
-@SETLOCAL EnableDelayedExpansion
 @IF /I "%CMD%"=="" (GOTO CMDOFF)
 @IF /I "%CMD%"=="@ECHO OFF" (SET "ECHOTOGGLE=false" && GOTO CMDOFF)
 @IF /I "%CMD%"=="ECHO OFF" (SET "ECHOTOGGLE=false" && GOTO CMDOFF)
@@ -86,7 +86,6 @@
 						@if not errorlevel 1 (
 							%CMD%
 						) else (
-							ENDLOCAL
 							CALL %CMD%
 					))))))
 :CONTINUEOFF
@@ -99,7 +98,6 @@
 @ECHO.
 @SET "CMD="
 @SET /P "CMD=%CDDIR%>"
-@SETLOCAL EnableDelayedExpansion
 @IF /I "%CMD%"=="" (GOTO CMDON)
 @IF /I "%CMD%"=="@ECHO OFF" (SET "ECHOTOGGLE=false" && GOTO CMDOFF)
 @IF /I "%CMD%"=="ECHO OFF" (SET "ECHOTOGGLE=false" && GOTO CMDOFF)
@@ -144,13 +142,13 @@
 						@if not errorlevel 1 (
 							%CMD%
 						) else (
-							ENDLOCAL
 							CALL %CMD%
 					))))))
 :CONTINUEON
 @SET "CDDIR=%CD%"
 @GOTO CMDON
 :EXIT
+@ENDLOCAL
 @CD %LOCATION%
 @ECHO OFF
 @CSCRIPT //nologo "%~f0?.wsf" %*
