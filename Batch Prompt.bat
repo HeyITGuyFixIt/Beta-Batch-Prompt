@@ -16,6 +16,7 @@
 @ECHO: https://github.com/HeyITGuyFixIt/Beta-Batch-Prompt/issues
 @TIMEOUT /T 02>nul
 @GOTO SETTINGS
+
 :SETTINGS
 @ECHO OFF
 @REM Change the color of the console
@@ -25,6 +26,7 @@
 @REM Replace %USERPROFILE% with whatever location you would like to start with. %USERPROFILE% is equal to "C:\Users\<your username>"
 @SET "CDDIR=%USERPROFILE%"
 @GOTO START
+
 :START
 @ECHO OFF
 @SETLOCAL EnableDelayedExpansion
@@ -36,6 +38,7 @@
 @ECHO:Copyright (c) 2018 Christian Sirolli
 @IF /I "%ECHOTOGGLE%"=="true" (GOTO CMDON)
 @IF /I "%ECHOTOGGLE%"=="false" (GOTO CMDOFF)
+
 :CMDOFF
 @ECHO OFF
 @CD %CDDIR%
@@ -88,9 +91,11 @@
 						) else (
 							CALL %CMD%
 					))))))
+
 :CONTINUEOFF
 @SET "CDDIR=%CD%"
 @GOTO CMDOFF
+
 :CMDON
 @ECHO OFF
 @CD %CDDIR%
@@ -144,9 +149,11 @@
 						) else (
 							CALL %CMD%
 					))))))
+
 :CONTINUEON
 @SET "CDDIR=%CD%"
 @GOTO CMDON
+
 :EXIT
 @ENDLOCAL
 @CD %LOCATION%
