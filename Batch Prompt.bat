@@ -34,7 +34,7 @@
 @CD %CDDIR%
 @COLOR %COLORS%
 @CLS
-@ECHO:Beta Batch Prompt [Version 1.0.0.9]
+@ECHO:Beta Batch Prompt [Version 1.0.0.10]
 @ECHO:Copyright (c) 2018 Christian Sirolli
 @IF /I "%ECHOTOGGLE%"=="true" (GOTO CMDON)
 @IF /I "%ECHOTOGGLE%"=="false" (GOTO CMDOFF)
