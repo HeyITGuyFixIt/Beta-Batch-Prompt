@@ -6,7 +6,7 @@ Always report bugs at [here](https://github.com/HeyITGuyFixIt/Beta-Batch-Prompt/
 1. Installation
    1. Download the zip file from GitHub and unzip it.
    2. Open the newly unzipped folder. You will find four (4) files: "Beta Batch Prompt.bat", "debug.bat", "LICENSE", and "README.md". If you run "Beta Batch Prompt.bat", Windows' Smart Screen will prevent you from running it simply because it is a batch script from the internet; you can click `More Info` and then `Run anyway` to run it. I promise there is nothing malicious in this script. Hold me to that promise. Optionally you can view the properties of the script and unblock it, which will cause the Smart Screen to not prevent you from running it.
-   3. The script itself is a standalone script, completely independant of any other file. Thus, you can copy and paste it or move it to any location, including (but not limited to) a CD, DVD or even a USB drive.
+   3. The script itself is a standalone script, completely independent of any other file. Thus, you can copy and paste it or move it to any location, including (but not limited to) a CD, DVD or even a USB drive.
 2. Standard Use
    1. Open Beta Batch Prompt from the location of the script, where ever it may be that you placed it.
    2. You will see the Think Differently command line splash screen. Wait for 2 seconds or press any key to skip it.
